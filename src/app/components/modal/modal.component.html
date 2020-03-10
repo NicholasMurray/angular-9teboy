@@ -1,0 +1,6 @@
+<div class="modal-outer" [hidden]="!open" (click)="closeModal($event)" (keydown.esc)="closeModal($event)" tabindex="0">
+  <div class="modal-inner">
+    <ng-content></ng-content>
+    <button [appAutofocus]="open" (click)="closeModal($event)">Close</button>
+  </div>
+</div>

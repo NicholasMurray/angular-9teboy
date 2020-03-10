@@ -1,0 +1,9 @@
+.card {
+  background-color: lightblue;
+  display: inline-grid;
+  height: 20rem;
+  justify-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  width: 12rem;  
+}

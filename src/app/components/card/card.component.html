@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="card-header">{{ person.name }}</div>
+  <div class="card-body">
+    <img [attr.src]="person.smallPicture" />
+  </div>
+  <div class="card-footer">
+    <button (click)="openModal($event)">View</button>
+  </div>
+  <app-modal [open]="modalOpen" (modalClosed)="closeModal($event)">
+    <h1>{{ person.name }}</h1>
+    <div>
+      <img [attr.src]="person.largePicture" />
+    </div>
+  </app-modal>
+</div>

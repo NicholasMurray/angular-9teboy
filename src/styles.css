@@ -1,0 +1,5 @@
+/* Add application styles & imports to this file! */
+
+:focus {
+  outline: 3px solid orange;
+}
